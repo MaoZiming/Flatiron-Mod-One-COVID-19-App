@@ -9,7 +9,7 @@ This app enables users to search for data on COVID-19 cases worldwide, hosted on
 
 1. Filter Covid-19 data by one country, or by multiple countries
 2. Filter Covid-19 data by one date, or by a range of dates
-3. Output data in .txt files, as text or as graphs in ASCII format
+3. Output data in .txt files, as text or as graphs in ASCII format (files saved to repository directory)
 4. Keep track of past queries and retrieve past queries if needed
 5. Select case types, such as active cases, confirmed cases, number of deaths
 6. Select the data type to be "cumulative" (i.e. total number of cases) or "daily" (i.e. new cases per day)
@@ -35,7 +35,7 @@ To run the app.
 Pull requests are welcome. Please make sure that your PR is well-scoped.
 For major changes, please open an issue first to discuss what you would like to change.
 
-## Links to license for your code
+## License
 
 MIT License
 

@@ -1,7 +1,0 @@
-This is a chart for confirmed_cases
-
------------------------
-The chart for Turkey (from: 2020-03-03 to: 2020-03-03)
-----------------------
-
-Date: 2020-03-03 Cases: 0

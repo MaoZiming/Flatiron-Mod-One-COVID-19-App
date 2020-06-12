@@ -1,5 +1,5 @@
 # Flatiron Module One Final Project: COVID-19 App
-# Made by Ziming Mao and Chad Palmer
+## Made by Ziming Mao and Chad Palmer
 
 ## Short Description
 

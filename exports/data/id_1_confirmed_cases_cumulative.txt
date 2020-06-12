@@ -1,0 +1,27 @@
+Confirmed Cases: Cumulative
+
+-----------------------
+United Kingdom (from: 2020-06-01 to: 2020-06-08)
+----------------------
+
+Date: 2020-06-01 Cases: 277736
+Date: 2020-06-02 Cases: 279392
+Date: 2020-06-03 Cases: 281270
+Date: 2020-06-04 Cases: 283079
+Date: 2020-06-05 Cases: 284734
+Date: 2020-06-06 Cases: 286294
+Date: 2020-06-07 Cases: 287621
+Date: 2020-06-08 Cases: 288834
+
+-----------------------
+Ireland (from: 2020-06-01 to: 2020-06-08)
+----------------------
+
+Date: 2020-06-01 Cases: 25062
+Date: 2020-06-02 Cases: 25066
+Date: 2020-06-03 Cases: 25111
+Date: 2020-06-04 Cases: 25142
+Date: 2020-06-05 Cases: 25163
+Date: 2020-06-06 Cases: 25183
+Date: 2020-06-07 Cases: 25201
+Date: 2020-06-08 Cases: 25207

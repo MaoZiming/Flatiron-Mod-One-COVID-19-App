@@ -104,4 +104,8 @@ class Query
         end
         output
     end
+
+    def formatted_case_type
+        {'Confirmed' => 'confirmed_cases', 'Active' => 'active_cases', 'Deaths' => 'death_cases', 'Recovered' => 'recovered_cases'}.key(case_type)
+    end
 end

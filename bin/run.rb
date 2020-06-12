@@ -65,10 +65,10 @@ def seed_database(country_slug)
     country_url = Request.country_url(country_slug)
     country_data = GetRequester.get_data(country_url)
     if country_data == []
-        puts "API does not support the current country!".red
+        puts "API does not support the current country.".red
         country_prompt
     elsif Country.all.map {|country| country.name}.include?(country_data.first["Country"])
-        puts "Country already loaded!".yellow
+        puts "Country already loaded!".red
     else
         Seeder.seed(country_data)
         puts "Done!".green
@@ -83,6 +83,7 @@ def add_additional_countries_prompt
         when 'Next'
             break
         when 'Quit'
+            puts "Goodbye!"
             exit
         end
     end
@@ -131,7 +132,7 @@ def date_prompt
         ending_date = $prompt.ask("Provide a ending date (DD/MM):") {|q| q.validate(/[0-9][0-9]\/[0-9][0-9]/, 'Please format as DD/MM')}
 
         if (!Date.valid_date? 2020,starting_date[3..4].to_i, starting_date[0..1].to_i or !Date.valid_date? 2020,ending_date[3..4].to_i, ending_date[0..1].to_i)
-            puts "Date input incorrect".red
+            puts "Date input incorrect (DD/MM)".red
             date_prompt
             return 0
         end
@@ -142,12 +143,12 @@ def date_prompt
             return 0
         end
         if check_date(starting_date, ending_date) == false
-            puts "Starting date must be earlier than ending_date!".red
+            puts "Starting date must be earlier than ending date!".red
             date_prompt
             return 0
         end
         if check_date_available(starting_date) == false || check_date_available(ending_date) == false
-            puts "Data are only available for dates later than Jan 22 ".red
+            puts "Data are only available for dates later than 22/01".red
             date_prompt
             return 0
         end
@@ -158,6 +159,7 @@ def date_prompt
         query.starting_date = starting_date_array
         query.ending_date = ending_date_array
     when 2
+        puts "Goodbye!"
         exit
     end
 end
@@ -183,7 +185,6 @@ def export_prompt
         data_incremented = Query.increment(data)
         Exporter.graph(data_incremented, "daily")
     when 5
-        puts "Returning to menu...".green
     end
 end
 

@@ -52,16 +52,18 @@ class Exporter
         txt", "w")
 
         out_file.puts (Query.load.case_type + " cases: " + text)
-        max = 0.00
+
+        max = 0.00         # the max number of cases
         input.each do |arr|
             if arr[2] > max
                 max = arr[2].to_f
             end
         end
-        base = 60.00
+
+        base = 60.00   # Maximum number of stars displayed
         country_name = ""
         input.each do |arr|
-            if country_name != arr[0]
+            if country_name != arr[0]   # When a new country is up
                 country_name = arr[0]
                 out_file.puts("")
                 out_file.puts("-----------------------")
@@ -75,7 +77,7 @@ class Exporter
                 percentage = (arr[2]/max).round(2)
             end
             out_file.print "#{arr[1].to_s[0..9]}: "
-            number_of_stars = percentage*base.round
+            number_of_stars = percentage*base.round   #Print the required number of stars
             for i in 0..number_of_stars do
                 out_file.print "*"
             end

@@ -3,7 +3,7 @@
 
 ## Short Description
 
-This app enables users to search for data on COVID-19 cases worldwide, hosted on the COVID-19 API (https://covid19api.com/), through a user-friendly interface. It also allows users to compare data from multiple countries and filter that data based on date and case type. The data compiled can also be plotted into graphs and exported as both graphs and text files. 
+This app enables users to search for data on COVID-19 cases worldwide, hosted on the COVID-19 API (https://covid19api.com/), through a user-friendly interface. It also allows users to compare data from multiple countries and filter that data based on date and case type. The data compiled can also be plotted into graphs and exported as both graphs and text files. Demo video: https://youtu.be/EU7xlNIe-AQ 
 
 ## Features
 
